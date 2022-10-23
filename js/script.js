@@ -65,7 +65,7 @@ function setTextColor(text, color) {
 }
 
 function updateColorsHash(colors = []) {
-  document.location.hash = colors.map(col => col.toString().substring(1).join('-'));
+  document.location.hash = colors.map(col => col.toString().substring(1)).join('-');
 }
 
 function getColorsFromHash() {
